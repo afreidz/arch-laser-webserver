@@ -1,0 +1,26 @@
+{
+  "name": "laser-server",
+  "version": "1.0.0",
+  "description": "Webserver to drive Arch Linux Laser Theme (afreidz/arch-laser)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andy Freidenfelds <afreidenfelds@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "github:afreidz:arch-laser-webserver"
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.0.2",
+    "@rafaelrinaldi/whereami": "^2.2.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "humanize-duration": "^3.18.0",
+    "lowdb": "^1.0.0",
+    "node-fetch": "^2.5.0",
+    "pretty-bytes": "^5.2.0",
+    "shortid": "^2.2.14"
+  }
+}
