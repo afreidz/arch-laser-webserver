@@ -1,6 +1,6 @@
-const Joi = require('joi')
 const low = require('lowdb')
 const path = require('path')
+const Joi = require('@hapi/joi')
 const shortid = require('shortid')
 const FileSync = require('lowdb/adapters/FileSync')
 

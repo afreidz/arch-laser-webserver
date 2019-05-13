@@ -16,21 +16,5 @@ module.exports = {
   },
   all () {
     return db.get(key).value()
-  },
-  filter () {
-    let keepers = ['cool', 'inspirational', 'intelligence', 'wisdom']
-    let genres = new Set()
-    let all = db.get(key).value()
-    for (let q of all) {
-      genres.add(q.GENRE)
-    }
-
-    for (let genre of genres) {
-      if (!keepers.includes(genre)) {
-        db.get(key).remove({ 'GENRE': genre }).write()
-      }
-    }
-
-    return this.count()
   }
 }
